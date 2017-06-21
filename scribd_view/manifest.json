@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Scribd view",
+  "version": "1.0.0",
+  "description": "An extension to help view blocked scribd documents",
+  "author": "Pratheesh Russell.S",
+  "icons": { "128": "icon.png" },
+  "content_scripts": [
+  {
+    "matches": ["https://www.scribd.com/doc/*","https://www.scribd.com/document/*"],
+    "js": ["scribd_view.js"]
+  }]
+}
